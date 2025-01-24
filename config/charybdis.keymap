@@ -16,7 +16,7 @@
         escc {
             bindings = <&kp ESC>;
             key-positions = <17 18>;
-            layers = <1>;
+            layers = <2>;
         };
     };
 
@@ -34,17 +34,6 @@
             >;
         };
 
-        layer_1 {
-            bindings = <
-&kp F1  &kp F2          &kp F3          &kp F4     &kp F5     &kp F6             &kp F7           &kp F8           &kp F9           &kp F10          &kp F11   &kp F12
-&trans  &trans          &kp UP_ARROW    &trans     &trans     &trans             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp HOME  &trans
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans     &kp PRINTSCREEN    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PRINTSCREEN  &trans    &trans
-&trans  &trans          &trans          &trans     &kp MINUS  &kp PLUS           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD       &trans    &trans
-                                        &trans     &trans     &trans             &trans           &trans
-                                                   &trans     &kp LEFT_WIN       &trans
-            >;
-        };
-
         layer_2 {
             bindings = <
 &trans  &trans      &trans      &trans      &trans       &trans           &trans     &trans         &trans          &trans                &trans                 &kp LG(L)
@@ -53,6 +42,17 @@
 &trans  &trans      &trans      &trans      &trans       &trans           &kp MINUS  &kp PLUS       &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &kp GRAVE
                                 &trans      &trans       &trans           &trans     &trans
                                             &trans       &kp LEFT_WIN     &trans
+            >;
+        };
+
+        layer_1 {
+            bindings = <
+&kp F1  &kp F2          &kp F3          &kp F4     &kp F5     &kp F6             &kp F7           &kp F8           &kp F9           &kp F10          &kp F11   &kp F12
+&trans  &trans          &kp UP_ARROW    &trans     &trans     &trans             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp HOME  &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans     &kp PRINTSCREEN    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PRINTSCREEN  &trans    &trans
+&trans  &trans          &trans          &trans     &kp MINUS  &kp PLUS           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD       &trans    &trans
+                                        &trans     &trans     &trans             &trans           &trans
+                                                   &trans     &kp LEFT_WIN       &trans
             >;
         };
     };
